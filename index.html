@@ -68,9 +68,8 @@
         </p>
         <p>
           I design, build and deploy <strong>production LLM agents</strong>, Retrieval-Augmented Generation (RAG)
-          pipelines, and automation workflows — including a commissioned SaaS product delivered to a real client, five
-          production-grade public repositories from the Exology Pioneer Program, and privacy-first document-intelligence
-          demos for a Saudi hospitality group.
+          pipelines, and automation workflows — including a production SaaS product and five
+          production-grade public repositories from the Exology Pioneer Program.
         </p>
         <p>
           My work spans agentic workflow design (LangChain / LangGraph), prompt engineering, LLM evaluation &
@@ -110,7 +109,6 @@
             <li>Shipped <strong>five production-grade systems</strong> as public GitHub repos — professional docs, run scripts, containerized (Docker) cloud-ready deployments.</li>
             <li>Built an LLM banking assistant with a hand-written tool-calling loop where transfer guardrails are enforced <em>in code</em> — surviving a documented prompt-injection attack; Banking77 intent classifier at <strong>98% accuracy</strong>; 15-case outcome/process eval suite.</li>
             <li>Developed a LangGraph e-commerce support agent: local-embedding RAG over policy docs, refund approval via human-in-the-loop interrupts, guarded live-API calls, plus an LLM-as-judge eval extension — replicated no-code in n8n.</li>
-            <li>Delivered <strong>two working client demos</strong> for a Saudi hospitality group (9 properties): local-OCR invoice extraction with deterministic sanity checks, and pilgrim onboarding with ICAO MRZ passport parsing + 5-rule validation engine — privacy-first.</li>
             <li>Designed a budget management system end-to-end (PRD → PostgreSQL schema → ERD → FastAPI app) with budget guardrails and rule-based approval routing.</li>
           </ul>
         </div>
@@ -162,7 +160,7 @@
             <a href="https://github.com/eyadXE/FinexaAgent" target="_blank" rel="noopener" aria-label="GitHub repo">⭐ Repo ↗</a>
           </div>
         </div>
-        <span class="flag">Delivered to real client</span>
+        <span class="flag">Production-grade SaaS</span>
         <p>Full production SaaS enabling Egyptian SMB owners to record financial transactions via natural-language Telegram messages in Arabic or English. Classify-then-dispatch tool calling extracts 14 structured accounting fields into a 40+ category Chart of Accounts with 5 validation rules in one inference call. Adaptive PostgreSQL memory lifts categorization confidence from 75% → 95% after 5+ confirmations. Landing page, Telegram auth, RBAC, real-time analytics dashboard (6 charts + AI-written narrative), deployed on Railway.</p>
         <p class="modalities">🎙️ Voice notes (Whisper STT) · 📷 Receipt photos (Vision OCR) · ✍️ Text — with inline Confirm / Edit / Undo.</p>
         <footer class="tags"><span>Python</span><span>FastAPI</span><span>LangChain</span><span>Groq AI</span><span>PostgreSQL</span><span>Railway</span><span>Telegram API</span></footer>
@@ -215,12 +213,12 @@
 
       <article class="project-card card reveal">
         <div class="project-head">
-          <h3>Elaf Group Demos — OCR Document Intelligence</h3>
+          <h3>Hospitality Operations System — OCR Document Intelligence</h3>
           <div class="project-links">
-            <a href="https://github.com/eyadXE/elaf-operations-ai-demos" target="_blank" rel="noopener">↗</a>
+            <a href="https://github.com/eyadXE/hospitality-operations-demos" target="_blank" rel="noopener">↗</a>
           </div>
         </div>
-        <p>Two client demos for a Saudi hospitality group (9 properties): invoice extraction with deterministic arithmetic/PO sanity checks routing auto-approve vs human review, and a pilgrim onboarding validator enforcing 5 document rules with MRZ (ICAO 9303) fallback parsing verified against a real bilingual passport. All OCR runs locally — zero data to third parties.</p>
+        <p>Document-intelligence system for hospitality operations: invoice extraction with deterministic arithmetic/PO sanity checks routing auto-approve vs human review, and an onboarding document validator enforcing 5 document rules with MRZ (ICAO 9303) fallback parsing verified against a real bilingual passport. All OCR runs locally — zero data to third parties.</p>
         <footer class="tags"><span>Tesseract OCR</span><span>MRZ ICAO 9303</span><span>Rules Engine</span><span>FastAPI</span><span>Docker</span></footer>
       </article>
 
