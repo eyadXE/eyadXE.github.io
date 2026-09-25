@@ -386,6 +386,10 @@ body {
 }
 .article-cta p { color: var(--muted); margin-bottom: 16px; }
 
+.giscus-section { margin-top: 48px; }
+.giscus-heading { font-size: 1.25rem; font-weight: 800; margin-bottom: 6px; }
+.giscus-sub { color: var(--muted); font-size: .9rem; margin-bottom: 22px; }
+
 /* ---------- reveal animations ---------- */
 .reveal { opacity: 0; transform: translateY(26px); transition: opacity .7s ease, transform .7s ease; }
 .reveal.visible { opacity: 1; transform: none; }
