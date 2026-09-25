@@ -7,6 +7,7 @@ const roles = [
 
 (function typeLoop() {
   const el = document.getElementById("typed");
+  if (!el) return; // this element only exists on the homepage hero
   let ri = 0, ci = 0, deleting = false;
 
   function tick() {
@@ -65,16 +66,18 @@ document.querySelectorAll(".stat-num").forEach((el) => counterIO.observe(el));
 // Mobile nav
 const toggle = document.getElementById("navToggle");
 const links = document.getElementById("navLinks");
-toggle.addEventListener("click", () => {
-  const open = links.classList.toggle("open");
-  toggle.setAttribute("aria-expanded", open ? "true" : "false");
-});
-links.querySelectorAll("a").forEach((a) =>
-  a.addEventListener("click", () => {
-    links.classList.remove("open");
-    toggle.setAttribute("aria-expanded", "false");
-  })
-);
+if (toggle && links) {
+  toggle.addEventListener("click", () => {
+    const open = links.classList.toggle("open");
+    toggle.setAttribute("aria-expanded", open ? "true" : "false");
+  });
+  links.querySelectorAll("a").forEach((a) =>
+    a.addEventListener("click", () => {
+      links.classList.remove("open");
+      toggle.setAttribute("aria-expanded", "false");
+    })
+  );
+}
 
 // Scroll-spy: highlight the nav link for the section currently in view
 const navAnchors = document.querySelectorAll(".nav-links a[data-section]");
